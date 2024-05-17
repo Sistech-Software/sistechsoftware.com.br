@@ -1,0 +1,45 @@
+---
+import { custom } from "astro/zod";
+
+const menuItems = [
+  {
+    titulo: 'Parceria',
+    link: '',
+    target: '',
+    customClass:''
+  },
+  {
+    titulo: 'Contato',
+    link: '',
+    target: '',
+    customClass:''
+  },
+  {
+    titulo: 'Conteúdos',
+    link: '',
+    target: '',
+    customClass:''
+  }
+]
+---
+<header id="desktop-header" class="text-white w-full sticky top-0 bg-gradient-to-r from-footer to-footer-gradient">
+  <div class="container hidden lg:flex items center justify-between mx-auto">
+    <div class="w-1/5 h-[35px] flex m-5">
+      <a href="/" class="max-h-[px] mt-2 mr-2">
+          <img class="block h-full" src="image/sistech.png" alt="Logo Sistech">
+      </a>
+    </div>
+    <div class="flex items-center justify-center w-3/5">
+      {
+          menuItems.map((item) => (
+              <a class:list={["text-base font-normal text-white mr-8", `${item.customClass}`]} href={item.link} target={item.target}>{item.titulo}</a>
+          ))
+      }
+    </div>
+    <div class="w-1/5 my-auto flex justify-end">
+      <div class="inline-block bg-white text-font-btn p-4 rounded-3xl">
+          <button> Entrar em Contato</button>
+      </div>
+  </div>
+
+</header>
