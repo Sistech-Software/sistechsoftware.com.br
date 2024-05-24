@@ -17,13 +17,19 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
+		<script src="https://unpkg.com/imask"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+		<link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.2.3/dist/css/glide.core.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.2.3/dist/css/glide.theme.min.css">
 		<meta name="generator" content={Astro.generator} />
 		<title>Sistech - {title}</title>
 	</head>
 	<body>
 		<div class="flex flex-col">
 			<Header />
-			<slot />
+			<div style="min-height: calc(100svh - 80px - 180px - 44px)">
+				<slot />
+			</div>
 			<Footer />
 		</div>
 	</body>

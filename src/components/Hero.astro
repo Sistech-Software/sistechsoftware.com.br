@@ -1,48 +1,179 @@
-<section class=" flex flex-col h-[90vh] md:h-[85vh] xl:mb-20">
-  <div class="bg-gradient-to-r from-footer to-footer-gradient px-4 md:px-8 lg:px-16 xl:px-32" style="border-radius: 0% 100% 40% 60% / 100% 0% 100% 0%;">
+<style>
+ .hero-radius {
+  border-radius: 0%;
+ }
+
+ @media (min-width: 1024px) {
+    .hero-radius {
+      border-radius: 0% 100% 40% 60% / 100% 0% 100% 0%;
+    }
+ }
+</style>
+<section class="flex flex-col bg-gradient-to-r from-footer to-footer-gradient hero-radius" style="height: calc(95svh - 75px); ">
+  <div class="px-4 md:px-8 lg:px-16 xl:px-32 mt-4">
     <div class="flex flex-col items-center justify-center h-full">
-      <div class="w-10/12 container">
-        <div class="flex items-center justify-center w-full">
-          <h1 class="text-3xl pt-2 pb-1 whitespace-nowrap text-center md:text-5xl lg:text-6xl font-bold text-white mb-10 leading-tight">
-            A Melhor Solução De
-            <br>
-            Gestão Empresarial
-          </h1>
-        </div>
-        <p class="text-base font-normal text-center text-white">
-          Funcionalidades completas para empresas de comércio e serviços
+      <div class="flex items-center justify-center w-full">
+        <h1 class="text-3xl whitespace-nowrap text-center md:text-5xl lg:text-6xl font-bold text-white mb-10 leading-tight">
+          A Melhor Solução De
           <br>
-          maximizarem seu potencial
-        </p>
-        <div class="flex justify-center mt-10 gap-5">
-          <div class="inline-block bg-white text-font-btn p-4 rounded-3xl">
-            <a href="https://wa.me/+5586981813581" target="_blank"> Entrar em Contato</a>
-          </div>
-          <div class="inline-block border border-white text-white p-4 rounded-3xl">
-            <button> Assista ao Vídeo</button>
-          </div>
+          Gestão Empresarial
+        </h1>
+      </div>
+      <p class="text-base font-normal text-center text-white">
+        Funcionalidades completas para empresas de comércio e serviços
+        <br>
+        maximizarem seu potencial
+      </p>
+      <div class="flex justify-center mt-10 gap-5">
+        <div class="inline-block text-center bg-white text-font-btn p-4 rounded-3xl">
+          <a href="https://wa.me/+5586981813581" target="_blank"> Entrar em Contato</a>
         </div>
-        <div class="flex flex-col h-[170px] items-center">
-          <img class="container" style="max-width: 1000px!important" src="image/hero.png" alt="Imagem representativa do software de gestão empresarial">
+        <div class="inline-block text-center border border-white text-white p-4 rounded-3xl">
+          <a href="#video">Assista ao Vídeo</a>
         </div>
-      </div>    
-    </div>
-  </div>
-  <div class="flex justify-center items-center">
-    <svg width="124" height="820" viewBox="0 0 124 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M123.077 26.4616C123.077 17.7095 118.838 10.8035 110.735 10.8035C102.598 10.8035 97.6752 17.7094 97.6752 26.3932C97.6752 36.6838 103.487 41.8804 111.829 41.8804C115.897 41.8804 118.974 40.9573 121.299 39.6582V32.8206C118.974 33.983 116.308 34.7009 112.923 34.7009C109.607 34.7009 106.667 33.5385 106.291 29.5043H123.009C123.009 29.0599 123.077 27.2821 123.077 26.4616ZM106.188 23.2137C106.188 19.3505 108.547 17.7436 110.701 17.7436C112.786 17.7436 115.009 19.3505 115.009 23.2137H106.188Z" fill="#152C5B"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M84.4786 10.8035C81.1282 10.8035 78.9744 12.3761 77.7778 13.4701L77.3333 11.3505H69.812V51.2137L78.359 49.4018L78.3932 39.7265C79.6239 40.6154 81.4359 41.8804 84.4445 41.8804C90.5641 41.8804 96.1368 36.9573 96.1368 26.1197C96.1026 16.2052 90.4616 10.8035 84.4786 10.8035ZM82.4274 34.359C80.4103 34.359 79.2137 33.6411 78.3932 32.7522L78.359 20.0684C79.2479 19.077 80.4786 18.3932 82.4274 18.3932C85.5385 18.3932 87.6923 21.8804 87.6923 26.359C87.6923 30.9402 85.5727 34.359 82.4274 34.359Z" fill="#152C5B"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M58.0513 8.78633L66.6325 6.94017V0L58.0513 1.81197V8.78633Z" fill="#152C5B"/>
-      <path d="M66.6325 11.3846H58.0513V41.2992H66.6325V11.3846Z" fill="#152C5B"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M48.8547 13.9145L48.3077 11.3846H40.9231V41.2992H49.4701V21.0257C51.4872 18.3932 54.906 18.8718 55.9658 19.2479V11.3846C54.8718 10.9744 50.8718 10.2222 48.8547 13.9145Z" fill="#152C5B"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.7607 3.96582L23.4188 5.7436L23.3846 33.1282C23.3846 38.188 27.1795 41.9145 32.2393 41.9145C35.0427 41.9145 37.094 41.4017 38.2222 40.7863V33.8462C37.1282 34.2906 31.7265 35.8633 31.7265 30.8034V18.6667H38.2222V11.3846H31.7265L31.7607 3.96582Z" fill="#152C5B"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64957 20.0684C8.64957 18.7351 9.74359 18.2223 11.5556 18.2223C14.1538 18.2223 17.4359 19.0086 20.0342 20.4103V12.3761C17.1966 11.2479 14.3932 10.8035 11.5556 10.8035C4.61539 10.8035 0 14.4274 0 20.4787C0 29.9146 12.9915 28.4103 12.9915 32.4787C12.9915 34.0513 11.6239 34.5642 9.7094 34.5642C6.8718 34.5642 3.24786 33.4018 0.376068 31.8291V39.9659C3.55556 41.3334 6.76923 41.9146 9.7094 41.9146C16.8205 41.9146 21.7094 38.3932 21.7094 32.2736C21.6752 22.0855 8.64957 23.8975 8.64957 20.0684Z" fill="#152C5B"/>
-    </svg>
-    <svg width="180" height="50" viewBox="0 0 75 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M35.7294 8.65836V31.8573H16.5141L35.7294 8.65836ZM35.7294 0.333374C35.7294 2.88148 34.7172 5.32522 32.9154 7.12701C31.1136 8.92879 28.6699 9.94102 26.1218 9.94102C23.5737 9.94102 21.1299 8.92879 19.3282 7.12701C17.5264 5.32522 16.5141 2.88148 16.5141 0.333374L35.7294 0.333374ZM38.895 31.8594C38.895 29.3113 39.9072 26.8675 41.709 25.0657C43.5108 23.264 45.9545 22.2517 48.5026 22.2517C51.0507 22.2517 53.4945 23.264 55.2963 25.0657C57.098 26.8675 58.1103 29.3113 58.1103 31.8594H38.895ZM38.895 23.5344V0.333374H58.1144L38.895 23.5323V23.5344ZM49.6414 51.7078C50.6296 51.7299 51.5864 51.3604 52.3033 50.68L53.623 52.1045C52.7515 53.0007 51.5428 53.6667 49.664 53.6667C46.443 53.6667 44.3607 51.5289 44.3607 48.6388C44.3476 47.9765 44.4681 47.3182 44.715 46.7034C44.9619 46.0886 45.33 45.5298 45.7975 45.0604C46.265 44.591 46.8223 44.2205 47.4361 43.9711C48.0499 43.7218 48.7076 43.5986 49.3701 43.6089C52.5685 43.6089 54.3815 46.0427 54.2212 49.4179H46.6609C46.9281 50.8198 47.9147 51.714 49.6352 51.714L49.6414 51.7078ZM51.9375 47.8084C51.7319 46.499 50.9508 45.535 49.3886 45.535C47.9353 45.535 46.9219 46.3572 46.6609 47.8084H51.9395H51.9375ZM-0.000152588 51.5988L5.81706 45.6871H0.137569V43.833H8.516V45.7241L2.69879 51.6338H8.59822V53.4899H-0.000152588V51.5988ZM15.1287 51.7057C16.1169 51.7278 17.0737 51.3584 17.7906 50.6779L19.1103 52.1024C18.2388 52.9987 17.0301 53.6647 15.1513 53.6647C11.9303 53.6647 9.84799 51.5269 9.84799 48.6368C9.83494 47.9744 9.95544 47.3162 10.2023 46.7014C10.4492 46.0866 10.8173 45.5278 11.2848 45.0583C11.7523 44.5889 12.3096 44.2185 12.9234 43.9691C13.5372 43.7197 14.1949 43.5965 14.8574 43.6069C18.0558 43.6069 19.8688 46.0406 19.7085 49.4158H12.1523C12.4195 50.8177 13.4062 51.7119 15.1266 51.7119L15.1287 51.7057ZM17.4289 47.8063C17.2233 46.497 16.4422 45.5329 14.88 45.5329C13.4267 45.5329 12.4133 46.3551 12.1523 47.8063H17.4309H17.4289ZM32.2761 48.6347C32.2761 45.5514 34.5845 43.611 37.1272 43.611C37.7373 43.6028 38.3418 43.7284 38.8983 43.9787C39.4547 44.2291 39.9496 44.5982 40.3483 45.0601V39.3621H42.4038V53.4632H40.3483V52.1333C39.9573 52.6142 39.4631 53.001 38.9023 53.2651C38.3415 53.5291 37.7285 53.6636 37.1087 53.6585C34.6421 53.6585 32.2782 51.7057 32.2782 48.6368L32.2761 48.6347ZM40.4634 48.6162C40.4472 48.0133 40.2536 47.4286 39.9069 46.9351C39.5601 46.4417 39.0756 46.0614 38.5138 45.8419C37.9521 45.6224 37.3381 45.5734 36.7486 45.701C36.1591 45.8287 35.6204 46.1272 35.1998 46.5594C34.7791 46.9917 34.4953 47.5383 34.3837 48.131C34.2721 48.7237 34.3377 49.3361 34.5724 49.8917C34.807 50.4473 35.2003 50.9214 35.703 51.2546C36.2057 51.5879 36.7954 51.7655 37.3985 51.7653C39.1663 51.7653 40.4613 50.3552 40.4613 48.6162H40.4634ZM55.5655 51.4118L57.4278 50.4457C57.674 50.8846 58.0355 51.2479 58.4731 51.4964C58.9107 51.7449 59.4079 51.8692 59.9109 51.8558C61.0744 51.8558 61.6787 51.2597 61.6787 50.5813C61.6787 49.8085 60.5543 49.6358 59.3313 49.3829C57.6868 49.0335 55.9746 48.4929 55.9746 46.5052C55.9746 44.9779 57.4278 43.5657 59.7157 43.5863C61.5184 43.5863 62.8607 44.3016 63.6212 45.4568L61.8945 46.4024C61.656 46.0491 61.3313 45.7625 60.9511 45.5697C60.5709 45.3769 60.1478 45.2843 59.7218 45.3006C58.6159 45.3006 58.0527 45.8412 58.0527 46.46C58.0527 47.1547 58.9448 47.348 60.3426 47.6583C61.9336 48.0078 63.7343 48.5278 63.7343 50.5361C63.7343 51.8681 62.5708 53.6647 59.8164 53.6462C57.8019 53.6462 56.3836 52.8342 55.5676 51.4056L55.5655 51.4118ZM69.3192 49.1712L67.6891 50.9493V53.4571H65.6336V39.356H67.6891V48.5916L72.0531 43.8021H74.5567L70.7745 47.9338L74.6554 53.4591H72.3285L69.3213 49.1712H69.3192ZM26.0642 43.6089C23.6181 43.6089 21.5729 45.1917 21.5729 47.8228V53.4653H23.6695V48.0838C23.6695 46.5011 24.5801 45.5514 26.1362 45.5514C27.6922 45.5514 28.4651 46.497 28.4651 48.0838V53.4653H30.5494V47.8228C30.5494 45.1958 28.4939 43.6089 26.0581 43.6089" fill="#152C5B"/>
-    </svg>
-    <img src="image/GitHub.png" alt="Logo">
-    <img src="image/GitHub.png" alt="Logo">
-    <img src="image/GitHub.png" alt="Logo">
+      </div>
+      <img class="mt-8" style="max-height: calc(95svh - 75px - 16px - 80px - 48px)" src="image/hero.png" alt="Imagem representativa do software de gestão empresarial">
+    </div>    
   </div>
 </section>
+<div class="flex flex-col items-center justify-center gap-4 mt-8 lg:mt-16">
+  <div class="flex items-center justify-center px-2 gap-4">
+    <button id="previous" class="flex-none flex justify-center items-cente rounded-full h-8 w-8 bg-primary-color hover:bg-quaternary-color">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#f5f5f5" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
+    </button>
+    <div class="slide grid grid-cols-12 gap-2">
+      <div class="flex items-center justify-center">
+        <img class="w-full h-20 rounded-full" src="image/beaut.webp" alt="">
+      </div>
+      <div class="flex items-center justify-center">
+        <img class="w-full h-20 rounded-full" src="image/casa.webp" alt="">
+      </div>
+      <div class="flex items-center justify-center">
+        <img class="w-full h-20 rounded-full" src="image/constru.webp" alt="">
+      </div>
+      <div class="flex items-center justify-center">
+        <img class="w-full h-20 rounded-full" src="image/estrela.webp" alt="">
+      </div>
+      <div class="flex items-center justify-center">
+        <img class="w-full h-20 rounded-full" src="image/folclore.webp" alt="">
+      </div>
+      <div class="flex items-center justify-center">
+        <img class="w-full h-20 rounded-full" src="image/jmetal.webp" alt="">
+      </div>
+      <div class="flex items-center justify-center">
+        <img class="w-full h-20 rounded-full" src="image/perfumaria.webp" alt="">
+      </div>
+      <div class="flex items-center justify-center">
+        <img class="w-full h-20 rounded-full" src="image/toquefinal.webp" alt="">
+      </div>
+      <div class="flex items-center justify-center">
+        <img class="w-full h-20 rounded-full" src="image/verbena.webp" alt="">
+      </div>
+    </div>
+    <button id="next" class="flex-none flex justify-center items-center rounded-full h-8 w-8 bg-primary-color hover:bg-quaternary-color">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#f5f5f5" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+    </button>
+  </div>
+  <div class="bullets flex gap-2"></div>
+</div>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const slide = document.querySelector('.slide')!;
+    const bullets = document.querySelector('.bullets')!;
+    const SLIDE_PER_VIEW = 4
+    const LOOP_INTERVAL = 3000
+    var intervalLoop = null
+    let indexOfActiveElement = 0;
+
+
+    function initializeLoop() {
+      clearTimeout(intervalLoop!);
+      intervalLoop = setTimeout(() => {
+        slideNext()
+      }, LOOP_INTERVAL)
+    }
+
+    function createBullet(index: number): HTMLDivElement {
+      const div = document.createElement('div');
+      div.classList.add('rounded-full', 'bg-gray-400', 'h-3', 'w-3', 'cursor-pointer')
+      div.addEventListener('click', (event) => {
+        goToSlide(index);
+      })
+      return div;
+    }
+
+    function initializeBullets() {
+      for(let index = 0; index < slide.children.length; index++) {
+        bullets.appendChild(createBullet(index))
+      }
+    }
+
+    function initialize() {
+      //initializeLoop()
+      initializeBullets()
+      refreshSlide()
+    }
+    
+
+    function refreshSlide() {
+      // `lg:grid-cols-${SLIDE_PER_VIEW.lg}`
+      for(let index = 0; index < slide.children.length; index++) {
+        const child = slide.children[index];
+        child.classList.add(`col-span-${12/SLIDE_PER_VIEW}`)
+        child.classList.remove('hidden')
+        bullets.children[index].classList.remove('bg-primary-color')
+        if (index === indexOfActiveElement) {
+          bullets.children[indexOfActiveElement].classList.add('bg-primary-color')
+        }
+        if (index >= SLIDE_PER_VIEW) {
+          child.classList.add('hidden')
+        }
+      }
+    }
+
+    // 12/3
+
+    function slideNext() {
+      initializeLoop()
+      slide.appendChild(slide.firstElementChild!)
+      if (indexOfActiveElement == slide.children.length - 1) {
+        indexOfActiveElement = 0
+      } else {
+        indexOfActiveElement += 1
+      }
+      refreshSlide()
+    }
+
+    function slidePrevious() {
+      initializeLoop()
+      slide.prepend(slide.lastElementChild!)
+      if (indexOfActiveElement == 0) {
+        indexOfActiveElement = slide.children.length - 1
+      } else {
+        indexOfActiveElement -= 1
+      }
+      refreshSlide()
+    }
+
+    function goToSlide(index: number) {
+      while (indexOfActiveElement != 0) {
+        slidePrevious();
+      }
+      for (let i = 0; i < index; i++) {
+        slideNext();
+      }
+    }
+
+    document.getElementById('next')?.addEventListener('click', () => {
+      slideNext();
+    })
+
+    document.getElementById('previous')?.addEventListener('click', () => {
+      slidePrevious();
+    })
+
+    
+    initialize()
+  })
+  
+</script>
