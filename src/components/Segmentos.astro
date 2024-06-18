@@ -1,4 +1,47 @@
-<div class="flex flex-col px-4 md:px-8 lg:px-16 xl:px-32">
+---
+const segmentos = [
+  {
+    title: 'Comércio',
+    description: 'Maximize a eficiência do seu comércio com nosso software especializado. Controle de estoque, emissão de notas e muito mais.',
+    features: [
+      'Suporte Humanizado',
+      'Frente de Caixa',
+      'Emissão de fiscal NFe, NFCe, MDFe e CTe.',
+      'Gestão Financeira',
+      'Relatórios Diversos',
+      'PDV',
+      'Emissão NFCe por app'
+    ]
+  },
+  {
+    title: 'Serviços',
+    description: 'Transforme a gestão de serviços com nossa plataforma completa. Agendamentos, emissão de notas e gestão financeira em um só lugar.',
+    features: [
+      'Cadastros',
+      'Ordem de Serviço',
+      'Nota fiscal de serviço',
+      'Orçamento',
+      'Relatórios Diversos'
+    ]
+  },
+  {
+    title: 'Outras Ferramentas',
+    description: 'Consulte o plano.',
+    features: [
+      'Emissão de boletos online',
+      'Vendas online (Loja virtual grátis)',
+      'Marketplace',
+      'Multiempresas',
+      'Calculo automatizado de ICMS-ST',
+      'Gestão de cobranças recorrentes',
+      'Funil de vendas',
+      'Agenda',
+      'Etiquetas'
+    ]
+  }
+]
+---
+<div class="flex flex-col items-center px-4 md:px-8 lg:px-16 xl:px-32">
   <div class="flex flex-col gap-2 text-center mb-12">
     <h1 class="text-center text-primary-color text-5xl font-bold mx-2 md:mx-0">
       Soluções para Diversos
@@ -6,90 +49,28 @@
       Segmentos
     </h1>
   </div>
-  <div class="flex flex-col lg:flex-row gap-8 items-center justify-center">
-    <div class="flex w-fit flex-col gap-4 rounded-xl shadow-2xl border p-7">
-      <h2 class="text-2xl font-semibold text-primary-color text-center">Comércio</h2>
-      <p class="text-tertiary-color text-sm text-center w-[296px]">
-        Maximize a eficiência do seu comércio com nosso software especializado. Controle de estoque, emissão de notas e muito mais.
-      </p>
-      <a href="https://wa.me/+5586981813581" target="_blank" class="bg-primary-color text-sm text-white p-3 rounded-xl font-semibold">Entrar em contato</a>
-      <div class="flex gap-2 md:flex md:flex-row lg:items-center">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="10" fill="#152C5B"/>
-          <path d="M6.25 10.625L9.25 12.5L13.75 7.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-primary-color text-sm font-semibold">Suporte Especializado</span>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center justify-center">
+    {
+      segmentos.map(segmento => (
+      <div class="flex h-full flex-col gap-4 rounded-xl shadow-2xl border p-7">
+        <h2 class="text-2xl font-semibold text-primary-color text-center">{segmento.title}</h2>
+        <p class="text-tertiary-color text-sm text-center">
+          {segmento.description}
+        </p>
+        <a href="https://wa.me/+5586981813581" target="_blank" class="bg-primary-color text-sm text-white p-3 rounded-xl font-semibold w-full">Entrar em contato</a href="https://wa.me/+5586981813581" target="_blank">
+        {
+          segmento.features.map(feature => (
+            <div class="grid grid-cols-[20px_auto] gap-2 items-center">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="10" fill="#152C5B"/>
+                <path d="M6.25 10.625L9.25 12.5L13.75 7.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="text-primary-color text-sm font-semibold">{feature}</span>
+            </div>
+          ))
+        }
       </div>
-      <div class="flex gap-2 md:flex md:flex-row lg:items-center">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="10" fill="#152C5B"/>
-          <path d="M6.25 10.625L9.25 12.5L13.75 7.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-primary-color text-sm font-semibold">Frente de Caixa</span>
-      </div>
-      <div class="flex gap-2 md:flex md:flex-row lg:items-center">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="10" fill="#152C5B"/>
-          <path d="M6.25 10.625L9.25 12.5L13.75 7.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-primary-color text-sm font-semibold">Emissão de Notas</span>
-      </div>
-      <div class="flex gap-2 md:flex md:flex-row lg:items-center">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="10" fill="#152C5B"/>
-          <path d="M6.25 10.625L9.25 12.5L13.75 7.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-primary-color text-sm font-semibold">Gestão Financeira</span>
-      </div>
-      <div class="flex gap-2 md:flex md:flex-row lg:items-center">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="10" fill="#152C5B"/>
-          <path d="M6.25 10.625L9.25 12.5L13.75 7.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-primary-color text-sm font-semibold">Relatórios Diversos</span>
-      </div>
-    </div>
-    <div class="flex w-fit flex-col gap-4 rounded-xl shadow-2xl border p-7">
-      <h2 class="text-2xl font-semibold text-primary-color text-center">Serviços</h2>
-      <p class="text-tertiary-color text-sm text-center w-[296px]">
-        Transforme a gestão de serviços com nossa plataforma completa. Agendamentos, emissão de notas e gestão financeira em um só lugar.
-      </p>
-      <button class="bg-primary-color text-sm text-white p-3 rounded-xl font-semibold w-full">Entrar em contato</button>
-      <div class="flex gap-2 md:flex md:flex-row lg:items-center">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="10" fill="#152C5B"/>
-          <path d="M6.25 10.625L9.25 12.5L13.75 7.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-primary-color text-sm font-semibold">Suporte Especializado</span>
-      </div>
-      <div class="flex gap-2 md:flex md:flex-row lg:items-center">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="10" fill="#152C5B"/>
-          <path d="M6.25 10.625L9.25 12.5L13.75 7.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-primary-color text-sm font-semibold">Frente de Caixa</span>
-      </div>
-      <div class="flex gap-2 md:flex md:flex-row lg:items-center">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="10" fill="#152C5B"/>
-          <path d="M6.25 10.625L9.25 12.5L13.75 7.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-primary-color text-sm font-semibold">Emissão de Notas</span>
-      </div>
-      <div class="flex gap-2 md:flex md:flex-row lg:items-center">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="10" fill="#152C5B"/>
-          <path d="M6.25 10.625L9.25 12.5L13.75 7.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-primary-color text-sm font-semibold">Gestão Financeira</span>
-      </div>
-      <div class="flex gap-2 md:flex md:flex-row lg:items-center">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="10" fill="#152C5B"/>
-          <path d="M6.25 10.625L9.25 12.5L13.75 7.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-primary-color text-sm font-semibold">Relatórios Diversos</span>
-      </div>
-    </div>    
+      ))
+    } 
   </div>
 </div>

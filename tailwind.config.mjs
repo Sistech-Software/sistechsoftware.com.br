@@ -22,6 +22,9 @@ export default {
 		},
 		fontFamily: {
 			'be-vietnam': ['Be Vietnam', 'sans-serif'],
+		},
+		backgroundImage: {
+			'heroImg': "url('/image/hero-back.webp')",
 		}
 	}
 },
