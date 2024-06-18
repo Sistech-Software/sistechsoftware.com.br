@@ -1,0 +1,46 @@
+---
+const contents: any[] = []
+---
+
+<div class="flex flex-col bg-gray-100 py-4 px-4 md:px-8 lg:px-16 xl:px-32">
+    <div class="flex flex-col gap-2 text-center mb-12">
+      <h1 class="text-center text-primary-color text-3xl font-bold mx-2 md:mx-0">
+        Conteúdos Recentes
+      </h1>
+      <p class="text-center text-tertiary-color text-sm">Veja nossas últimas postagens</p>
+    </div>
+    <div class="flex flex-col gap-4 items-center justify-center">
+        <div id="contents" class="grid grid-cols-1 lg:grid-cols-3"></div>
+        <a href="https://blog.sistechsoftware.com.br/" target="_blank" class="bg-button1 text-sm text-white p-3 rounded-xl font-semibold">Veja mais conteúdos</a>
+    </div>
+</div>
+<script \>
+    window.addEventListener('DOMContentLoaded', () => {
+        const contentsElement = document.getElementById('contents')
+        
+        fetch('https://blog.sistechsoftware.com.br/ghost/api/content/posts/?key=d6e338f5c0e07ca5bca53ad207')
+            .then(response => response.json())
+            .then(data => {
+                const contents = data.posts.map(post => ({
+                    title: post.title,
+                    excerpt: post.excerpt,
+                    feature_image: post.feature_image,
+                    url: post.url
+                }))
+
+                for (let i = 0; i < 1; i++) {
+                    const content = contents[i]
+                    const contentElement = document.createElement('div')
+                    contentElement.classList.add('flex', 'flex-col', 'gap-2')
+                    contentElement.innerHTML = `
+                        <a href="${content?.url}" class="flex flex-col gap-2 shadow-xl p-4 rounded-lg bg-white">
+                            <img src="${content?.feature_image}" alt="${content?.title}" class="w-full h-48 object-cover rounded-lg" />
+                            <h2 class="text-primary-color text-lg font-bold">${content?.title}</h2>
+                            <p class="text-tertiary-color text-sm">${content?.excerpt}</p>
+                        </a>
+                    `
+                    contentsElement.appendChild(contentElement)
+                }
+            })
+    })
+</script>
