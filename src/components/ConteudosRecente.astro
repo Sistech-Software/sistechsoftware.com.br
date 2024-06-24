@@ -33,7 +33,7 @@ const contents: any[] = []
                     const contentElement = document.createElement('div')
                     contentElement.classList.add('flex', 'flex-col', 'gap-2')
                     contentElement.innerHTML = `
-                        <a href="${content?.url}" class="flex flex-col gap-2 shadow-xl p-4 rounded-lg bg-white">
+                        <a href="${content?.url}" class="flex flex-col h-full gap-2 shadow-xl p-4 rounded-lg bg-white">
                             <img src="${content?.feature_image}" alt="${content?.title}" class="w-full h-48 object-cover rounded-lg" />
                             <h2 class="text-primary-color text-lg font-bold">${content?.title}</h2>
                             <p class="text-tertiary-color text-sm">${content?.excerpt}</p>
