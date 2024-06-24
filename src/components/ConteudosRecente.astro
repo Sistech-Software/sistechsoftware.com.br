@@ -10,7 +10,7 @@ const contents: any[] = []
       <p class="text-center text-tertiary-color text-sm">Veja nossas últimas postagens</p>
     </div>
     <div class="flex flex-col gap-4 items-center justify-center">
-        <div id="contents" class="grid grid-cols-1 lg:grid-cols-3"></div>
+        <div id="contents" class="grid grid-cols-1 lg:grid-cols-3 gap-4"></div>
         <a href="https://blog.sistechsoftware.com.br/" target="_blank" class="bg-button1 text-sm text-white p-3 rounded-xl font-semibold">Veja mais conteúdos</a>
     </div>
 </div>
@@ -28,7 +28,7 @@ const contents: any[] = []
                     url: post.url
                 }))
 
-                for (let i = 0; i < 1; i++) {
+                for (let i = 0; i < 3; i++) {
                     const content = contents[i]
                     const contentElement = document.createElement('div')
                     contentElement.classList.add('flex', 'flex-col', 'gap-2')
